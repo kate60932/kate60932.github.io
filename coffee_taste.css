@@ -1,0 +1,377 @@
+#coffee_taste {
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(-45deg, #2D2723, #1B1819);
+    overflow: hidden;
+}
+
+.taste_top {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.taste_top h1 {
+    margin-top: 0;
+    padding-top: 100px;
+    color: #DBDBDB;
+    font-size: 32pt
+}
+
+.taste_top h2 {
+    font-size: 16pt;
+    padding-bottom: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    margin-left: 0;
+    color: #DBDBDB;
+}
+
+.taste_bottom {
+    width: 100%;
+    height: 1692.42px;
+}
+
+.section1 {
+    width: 100%;
+    height: 33%;
+    position: relative;
+}
+
+.box1 {
+    width: 274px;
+    height: 274px;
+    background-color: #665440;
+    float: left;
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.pic1 {
+    width: 544px;
+    height: 362px;
+    background-image: url(step1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.text1 {
+    width: 330px;
+    height: 280px;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.text1 h1 {
+    color: #252728;
+    float: right;
+    margin-bottom: 0;
+    padding-right: 20px;
+}
+
+.text1 h2 {
+    color: #BC882E;
+    margin: 0px 6px;
+    clear: both;
+    padding-left: 20px;
+}
+
+.text1 h4 {
+    color: #BC882E;
+    margin-top: 0;
+    padding-left: 28px;
+}
+
+.text1 p {
+    color: black;
+    padding: 0 25px;
+    line-height: 25px;
+    letter-spacing: 1pt;
+    font-weight: 600;
+}
+
+.section2 {
+    width: 100%;
+    height: 33%;
+    position: relative;
+}
+
+.box2 {
+    width: 1140px;
+    height: 243px;
+    background-color: #665440;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.pic2 {
+    width: 634px;
+    height: 425px;
+    background-image: url(step2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.text2 {
+    width: 350px;
+    height: 310px;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+    position: absolute;
+    top: 44%;
+    left: 28%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.text2 h1 {
+    color: #252728;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+.text2 h2 {
+    color: #BC882E;
+    margin: 0px 6px;
+    clear: both;
+    float: right;
+    padding-right: 20px;
+}
+
+.text2 h4 {
+    color: #BC882E;
+    margin-top: 0;
+    padding-right: 28px;
+    clear: both;
+    float: right;
+}
+
+.text2 p {
+    color: black;
+    padding: 0 25px;
+    margin: 0;
+    line-height: 25px;
+    letter-spacing: 1pt;
+    font-weight: 600;
+    clear: both;
+    float: left;
+}
+
+.section3 {
+    width: 100%;
+    height: 33%;
+    position: relative;
+}
+
+.box3 {
+    width: 274px;
+    height: 274px;
+    background-color: #665440;
+    float: left;
+    position: absolute;
+    top: 23%;
+    left: 60%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.pic3 {
+    width: 539px;
+    height: 357px;
+    background-image: url(step3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.text3 {
+    width: 330px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    float: left;
+    position: absolute;
+    top: 13%;
+    left: 55%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.text3 h1 {
+    color: #252728;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-left: 25px;
+}
+
+.text3 h2 {
+    color: #BC882E;
+    margin: 0px 6px;
+    clear: both;
+    float: right;
+    padding-right: 20px;
+}
+
+.text3 h4 {
+    color: #BC882E;
+    margin-top: 0;
+    padding-right: 28px;
+    clear: both;
+    float: right;
+}
+
+.text3 p {
+    color: black;
+    margin: 0;
+    padding: 0 25px;
+    line-height: 25px;
+    letter-spacing: 1pt;
+    font-weight: 600;
+    clear: both;
+    float: left;
+}
+
+@media (max-width: 576px) {
+    .taste_top h1 {
+        padding-top: 80px;
+        font-size: 20pt;
+    }
+    .taste_top h2 {
+        width: 320px;
+        font-size: 10pt;
+        margin-left: calc(50% - 160px);
+    }
+    .box1 {
+        width: 174px;
+        height: 174px;
+        top: 12%;
+        left: 2%;
+    }
+    .pic1 {
+        width: 300px;
+        height: 200px;
+        top: 20%;
+        left: 10%;
+    }
+    .text1 {
+        width: 325px;
+        height: 250px;
+        top: 50%;
+        left: 15%;
+    }
+    .text1 h1 {
+        font-size: 18pt;
+    }
+    .text1 h2 {
+        padding-bottom: 10px;
+        font-size: 18pt;
+    }
+    .text1 h4 {
+        margin-bottom: 0px;
+    }
+    .text1 p {
+        margin-top: 5px;
+    }
+    .box2 {
+        width: 100%;
+        height: 243px;
+        top: 25%;
+        left: 0%;
+    }
+    .pic2 {
+        width: 373px;
+        height: 250px;
+        top: 10%;
+        left: 15%;
+    }
+    .text2 {
+        width: 325px;
+        height: 285px;
+        top: 50%;
+        left: 0%;
+    }
+    .text2 h1 {
+        font-size: 18pt;
+    }
+    .text2 h2 {
+        padding-bottom: 10px;
+        font-size: 18pt;
+    }
+    .text2 h4 {
+        margin-bottom: 0px;
+    }
+    .text2 p {
+        margin-top: 5px;
+    }
+
+    .box3 {
+        width: 274px;
+        height: 274px;
+        background-color: #665440;
+        float: left;
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        box-shadow: 0px 0px 10px black;
+    }
+    
+    .pic3 {
+        width: 362px;
+        height: 240px;
+        background-image: url(step3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        float: left;
+        position: absolute;
+        top: 18%;
+        left: 10%;
+        box-shadow: 0px 0px 10px black;
+    }
+    
+    .text3 {
+        width: 320px;
+        height: 260px;
+        
+        background-color: rgba(255, 255, 255, 0.9);
+        float: left;
+        position: absolute;
+        top: 55%;
+        left: 18%;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .text3 h1 {
+        font-size: 18pt;
+    }
+    .text3 h2 {
+        padding-bottom: 10px;
+        font-size: 18pt;
+    }
+    .text3 h4 {
+        margin-bottom: 0px;
+    }
+    .text3 p {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,312 @@
+#contact_fami{
+    width: 100%;
+    height: 900px;
+    background-color: white;
+    display:flex;
+align-items:center;
+justify-content:center;
+overflow: hidden;
+}
+
+.contact_inner{
+    width: 65%;
+    height:80%;
+    background-image: url(contact_backimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact_inner_mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact_top_1{
+    width: 100%;
+    height: 12.5%;
+ 
+    display:flex;
+align-items:flex-end;
+justify-content:center;
+   
+}
+
+.contact_top_1 h1{
+    margin: 0;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.contact_top_2{
+    width: 100%;
+    height: 12.5%;
+ background-color: #aacfe4;
+    display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.front_subtitle{
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-top: 10px;
+    float: left;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.back_subtitle{
+    margin-left: 5px; 
+    margin-top: 10px;
+    float: left;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn_line{
+    width: 71.5px;
+    height: 25px;
+    background-image: url(line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.contact_bottom_left{
+    width: 50%;
+    height: 75%;
+
+    float: left;
+    display:flex;
+align-items:center;
+justify-content:flex-end;
+padding-right: 35px;
+}
+
+.contact_bottom_right{
+    width: 40%;
+    height: 75%;
+    float: left;
+    padding-top: 20px;
+}
+
+.contact_bottom_right h3{
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 20px;
+    color: white;
+    letter-spacing: 1pt;
+    
+}
+
+.contact_bottom_right input{
+
+    float:left;
+    border:solid 1px #aacfe4;
+    width:350px;
+    height: 30px;
+    margin:5% 0 0 30px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.contact_bottom_right textarea{
+    float:left;
+    border:solid 1px #aacfe4;
+    width:350px;
+    height: 180px;
+    margin:5% 0 0 30px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    font-size: 14px;
+    padding: 10px 10px;
+    overflow: auto;
+}
+
+.contact_bottom_right button{
+    float: left;
+    width: 80px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    margin: 20px 0 0 160px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+@media (max-width: 576px){
+    #contact_fami{
+        width: 100%;
+        height: 1600px;
+        background-color: white;
+        display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    }
+    
+    .contact_inner{
+        width: 100%;
+        height:90%;
+    }
+
+    .contact_top_1{
+        width: 70%;
+        height: 12.5%;
+        display:flex;
+    align-items:flex-end;
+    justify-content:center;
+       
+    }
+
+    .contact_top_1 h1{
+        margin: 0;
+        padding: 25px 0 0 25px;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 20pt;
+    }
+
+    .contact_top_2{
+        width: 100%;
+        height: 20%;
+     background-color: #aacfe4;
+        display: unset;
+    align-items: unset;
+    justify-content:unset;
+    }
+    
+    .front_subtitle{
+        
+        width: 300px;
+        height: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 25px 0px 0px 25px;
+        float: none;
+        color: white;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    
+    .back_subtitle{
+        
+        margin-left: 5px; 
+        margin-top: 30px;
+        font-size: 18px;
+        float: left;
+        color: white;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    
+    .btn_line{
+        width: 71.5px;
+        height: 25px;
+        background-image: url(line.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clear: both;
+        float: left;
+        margin-left: 25px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        
+    }
+
+    .contact_bottom_left{
+        width: 100%;
+        height:30%;
+        margin-top: 50px;
+        float: left;
+        display:flex;
+    align-items:center;
+    justify-content: space-around;
+    padding-right: 0px;
+    
+    }
+    
+    .contact_bottom_right{
+        width: 100%;
+        height: 30%;
+        float: left;
+        padding-top: 20px;
+        margin-top: 50px;
+        
+    }
+
+    .contact_bottom_right h3{
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        color: white;
+        letter-spacing: 1pt;
+        font-size: 12pt;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    
+    .contact_bottom_right input{
+    
+        float:left;
+        border:solid 1px #aacfe4;
+        width:350px;
+        height: 30px;
+        margin:5% 0px 0px calc(50% - 175px);
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        font-size: 14px;
+        padding: 10px 10px;
+       
+        
+    }
+    
+    .contact_bottom_right textarea{
+        float:left;
+        border:solid 1px #aacfe4;
+        width:350px;
+        height: 180px;
+        margin:5% 0 0 calc(50% - 175px);
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        font-size: 14px;
+        padding: 10px 10px;
+        overflow: auto;
+    
+    }
+    
+    .contact_bottom_right button{
+        float: left;
+        width: 80px;
+        height: 40px;
+        background-color: orange;
+        color: white;
+        margin: 20px 0 0 calc(50% - 40px);
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 16px;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+
+    }
+}

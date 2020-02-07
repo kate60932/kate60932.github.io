@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax_AndreChiang_FineVersion</title>
+    <style>
+        * {
+            font-family: 微軟正黑體;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #topBar {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(72, 80, 102);
+        }
+
+        .icon1 {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 5px 15px;
+            border-radius: 60px;
+        }
+
+        .icon2 {
+            width: 150px;
+            height: 50px;
+            float: left;
+            margin: 5px 0px;
+            border-radius: 30px;
+        }
+
+        .navigation {
+            padding-left: 580px;
+            margin: 0;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .navigation li {
+            display: inline-block;
+            list-style: none;
+            padding: 5px 15px;
+            height: 60px;
+            border-left: 1px solid #e9eaed;
+        }
+
+        .navigation li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18pt;
+            font-weight: 1000;
+        }
+
+        .banner {
+            width: 100%;
+            height: 50vh;
+            background-image: url(andre2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #block1 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(245, 222, 179, 0.1);
+
+        }
+
+        .upperBox_1 {
+            width: 100%;
+            height: 40%;
+
+        }
+
+        .upperbox_left {
+            width: 40%;
+            height: 100%;
+            position: relative;
+            float: left;
+
+        }
+
+        .left_img {
+            width: 70%;
+            height: 100%;
+            background-image: url(andre3.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: cover;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .upperbox_right {
+            width: 60%;
+            height: 100%;
+            float: right;
+            position: relative;
+            font-size: 14pt;
+            letter-spacing: 2px;
+            text-align: left;
+            padding: 120px 30px;
+            color: white;
+        }
+
+
+
+        .bottomBox_1 {
+            width: 100%;
+            height: 60%;
+            position: relative;
+        }
+
+        .bottombox_left {
+            width: 60%;
+            height: 100%;
+            float: left;
+            font-size: 14pt;
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 180px 30px;
+            color: white;
+
+
+        }
+
+        .bottombox_right {
+            width: 40%;
+            height: 100%;
+            float: right;
+            position: relative;
+
+        }
+
+        .bottomImg {
+            width: 80%;
+            height: 35%;
+            background-image: url(andre4.jpg);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+
+        #block2 {
+            width: 100%;
+            height: 120vh;
+            background-color: skyblue;
+        }
+
+        .boxImage_1 {
+            width: 100%;
+            height: 40vh;
+            background-image: url("andre8.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 100%;
+            position: relative;
+            border-top: seashell 15px solid;
+        }
+
+        .imgText_1 {
+            font-size: 18pt;
+            padding: 15px;
+            color: seashell;
+            background-color: rgba(0, 0, 0, 75%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .maskText {
+            width: 100%;
+            height: 40vh;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+
+        .boxImage_2 {
+            width: 100%;
+            height: 40vh;
+            background-image: url("andre7.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 50%;
+            position: relative;
+            border-top: seashell 15px solid;
+        }
+
+        .imgText_2 {
+            font-size: 18pt;
+            padding: 15px;
+            color: seashell;
+            background-color: rgba(0, 0, 0, 75%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .boxImage_3 {
+            width: 100%;
+            height: 40vh;
+            background-image: url("andre6.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 50%;
+            position: relative;
+            border-top: seashell 15px solid;
+        }
+
+        .imgText_3 {
+            font-size: 18pt;
+            padding: 15px;
+            color: seashell;
+            background-color: rgba(0, 0, 0, 75%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #block3 {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            position: relative;
+        }
+
+        .block3Top {
+            width: 100%;
+            height: 35vh;
+            background-size: cover;
+            background-image: url(restaurant.jpg);
+
+            border-top: black solid 100px;
+            background-position: bottom;
+            position: relative;
+
+        }
+
+        .block3Text {
+            font-size: 32pt;
+            letter-spacing: 5pt;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mask3 {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .block3_mid {
+            width: 100%;
+            height: 65vh;
+            /* position: relative; */
+        }
+
+        .box1 {
+            width: 40%;
+            height: 33%;
+            background-image: url(reataurant_andre.jpg);
+            background-size: cover;
+            background-position-x: 75%;
+            background-position-y: 65%;
+            float: left;
+            margin-left: 0px;
+            margin-top: 3px;
+        }
+
+        .box1 .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .box1:hover .mask {
+            opacity: 1;
+        }
+
+        .box1 .mask .text {
+            text-align: center;
+            color: white;
+            font-size: 18pt;
+            font-weight: 200;
+            margin: auto;
+            padding-top: 25%;
+        }
+
+        .box1 .mask .text span {
+            padding: 10px 30px;
+            background-color: black;
+        }
+
+        .box2 {
+            width: 40%;
+            height: 32%;
+            background-image: url(raw.jpg);
+            background-size: cover;
+            background-position-x: 75%;
+            margin-left: 0.5%;
+            margin-top: 3px;
+
+            float: right;
+        }
+
+        .box2 .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .box2:hover .mask {
+            opacity: 1;
+        }
+
+        .box2 .mask .text {
+            text-align: center;
+            color: white;
+            font-size: 18pt;
+            font-weight: 200;
+            margin: auto;
+            padding-top: 25%;
+        }
+
+        .box2 .mask .text span {
+            padding: 10px 30px;
+            background-color: black;
+        }
+
+        .box3 {
+            width: 40%;
+            height: 33%;
+            background-image: url(the_bridge.jpg);
+            background-size: cover;
+            background-position-x: 75%;
+            float: left;
+            clear: both;
+            margin-right: 0px;
+            margin-top: 3px;
+        }
+
+        .box3 .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .box3:hover .mask {
+            opacity: 1;
+        }
+
+        .box3 .mask .text {
+            text-align: center;
+            color: white;
+            font-size: 18pt;
+            font-weight: 200;
+            margin: auto;
+            padding-top: 25%;
+        }
+
+        .box3 .mask .text span {
+            padding: 10px 30px;
+            background-color: black;
+        }
+
+
+        .bottomText_res {
+            width: 60%;
+            font-size: 12pt;
+            letter-spacing: 2px;
+            text-align: center;
+            color: black;
+            padding: 6.4%;
+
+            display: block;
+            float: right;
+
+        }
+
+        .bottomText_raw {
+            width: 55%;
+            font-size: 12pt;
+            letter-spacing: 2px;
+            text-align: center;
+            color: black;
+            display: block;
+         
+            float: left;
+            padding: 5%;
+
+
+        }
+
+        .bottomText_bridge {
+            width: 60%;
+            font-size: 12pt;
+            letter-spacing: 2px;
+            text-align: center;
+            color: black;
+            padding: 7%;
+            display: block;
+            float: right;
+
+        }
+
+        #block4 {
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .block4_body {
+            width: 100%;
+            height: 95%;
+            position: relative;
+        }
+
+        .card {
+            width: 45%;
+            height: 80%;
+            display: flex;
+            background-image: url(andreNow.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: 40%;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cardText {
+            width: 40%;
+            font-size: 18px;
+            margin-left: 10px;
+            color: rgb(189, 112, 25);
+            font-weight: normal;
+            float: right;
+            padding-top: 25%;
+            padding-right: 3%;
+
+        }
+
+
+        .block4_foot {
+            width: 100%;
+            height: 5%;
+            background-color: gray;
+            text-align: center;
+            color: seashell;
+            padding-top: 22px;
+        }
+
+        .GoToTop {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(72, 80, 102);
+            ;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: 900;
+
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+        }
+
+
+        @media (max-width:768px) {
+
+            .navigation {
+                padding-left: 300px;
+            }
+
+            .navigation li a {
+                font-size: 12pt;
+            }
+
+            .container {
+                width: 100%;
+                max-width: unset;
+            }
+
+
+            .upperBox_1 {
+                position: relative;
+                margin-top: 5px;
+            }
+
+            .upperbox_left {
+                width: 100%;
+                height: 100%;
+            }
+
+            .left_img {
+                width: 100%;
+                height: 100%;
+                background-position-y: -85px;
+            }
+
+            .upperbox_right {
+                width: 100%;
+                padding: 80px 30px;
+                font-size: 12pt;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                top: 0%;
+            }
+
+            .bottomBox_1 {
+                padding-top: 5px;
+            }
+
+
+            .bottombox_left {
+                width: 100%;
+                height: 100%;
+                font-size: 12pt;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                top: 0%;
+                z-index: 1;
+            }
+
+            .bottomImg {
+                width: 100%;
+                height: 100%;
+            }
+
+            .bottombox_right {
+                width: 100%;
+                height: 100%;
+            }
+
+            .imgText_1 {
+                font-size: 12pt;
+            }
+
+            .imgText_2 {
+                font-size: 12pt;
+            }
+
+            .imgText_3 {
+                font-size: 12pt;
+            }
+
+
+            .block3Top {
+                height: 15vh;
+                border-top: black solid 30px;
+            }
+
+            .block3Text {
+                font-size: 24pt;
+                letter-spacing: 4pt;
+            }
+
+            .block3_mid {
+                width: 100%;
+                height: 65vh;
+                position: relative;
+            }
+
+            .box1 {
+                width: 100%;
+                height: 30%;
+                background-position-y: -100%;
+
+            }
+
+            .box1 .mask .text {
+
+                padding-top: 12%;
+                ;
+            }
+
+            .box2 {
+                width: 100%;
+                height: 30%;
+                background-position-y: 65%;
+                float: LEFT;
+            }
+
+            .box2 .mask .text {
+
+                padding-top: 12%;
+            }
+
+            .box3 {
+                width: 100%;
+                height: 30%;
+                background-position-y: 0%;
+
+            }
+
+            .box3 .mask .text {
+
+                padding-top: 12%;
+            }
+
+            .bottomText_res {
+                width: 100%;
+                font-size: 12pt;
+                letter-spacing: 0px;
+                padding: 2%;
+                line-height: 20px;
+            }
+
+            .bottomText_raw {
+                width: 100%;
+                font-size: 12pt;
+                letter-spacing: 0px;
+                float: left;
+                position: relative;
+                top: 0;
+                left: 0;
+                line-height: 24px;
+                padding: 5px;
+            }
+
+            .bottomText_bridge {
+                width: 100%;
+                font-size: 12pt;
+                letter-spacing: 0px;
+                padding: 5PX;
+
+            }
+
+            .block4_body {
+                width: 100%;
+                height: 95%;
+                position: relative;
+            }
+
+            .card {
+                width: 70%;
+                height: 80%;
+                position: absolute;
+                top: 53%;
+                left: 50%;
+
+            }
+
+            .cardText {
+                width: 40%;
+                margin: auto;
+                font-size: 14px;
+                position: absolute;
+                top: 13%;
+                left: 46%;
+                background-color: rgba(0, 0, 0, 0.7);
+                text-align: left;
+                padding-left: 25px;
+
+            }
+
+            .GoToTop {
+                z-index: 999;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div id="topBar">
+            <img src="logo3.PNG" alt="" class="icon1">
+            <img src="logo2.PNG" alt="" class="icon2">
+            <ul class="navigation">
+                <li><a href="#block1">名廚生平</a></li>
+                <li><a href="#block2">主廚說</a></li>
+                <li><a href="#block3">餐廳介紹</a></li>
+                <li><a href="#block4">現在的André</a></li>
+            </ul>
+        </div>
+        <div class="banner"></div>
+        <div id="block1">
+            <div class="upperBox_1">
+                <div class="upperbox_left">
+                    <div class="left_img"></div>
+                </div>
+                <div class="upperbox_right">
+                    <span>
+                        <h1>江振誠</h1>
+                        <p>英文名 André Chiang，生於臺北市士林區，臺灣籍旅外廚師，淡水商工餐飲管理畢業，中華民國第五十四屆十大傑出青年。曾旅居新加坡於自家法式料理餐廳「Restaurant
+                            ANDRÉ」，餐廳於2016年新加坡米其林指南中評鑑為二星，2017年聖沛黎洛全球50最佳餐廳-名列第14，亞洲50最佳餐廳-名列第2，同時榮獲新加坡最佳餐廳。於2018年2月14日結束營業，返回家鄉臺灣單純經營台北「RAW」餐廳，並將親身經歷及知識傳承給臺灣的下一代。
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="bottomBox_1">
+                <div class="bottombox_left">
+                    <span>20多歲時，江振誠為了見識真正的法國料理，卸下「台灣最年輕法國餐廳主廚」身分，獨自前往法國米其林三星餐廳，從不支薪的學徒做起。那段時間，他每天工作16小時，專做其他人不想碰的清潔打掃和削馬鈴薯、煮馬鈴薯工作；就連每週一天的休假日，他也主動到餐廳幫忙，只希望有機會接觸平常不會被分配到的任務。
+                        <p>這是江振誠當年為躋身一流主廚所付出的努力，即使曾在一年內瘦了16公斤，也從不喊苦。但被問到是否以同樣標準要求自己的團隊，他淺淺地笑著說：「當然沒有，not even
+                            close（差遠了）。」
+                            直到現在，江振誠每天還是在廚房至少待上12個小時。一個用餐時段得出400道菜，他仍親手排盤。甚至，經過法國三星級餐廳廚房的洗禮，江振誠堅持要親自打掃完自己的料裡區域後才能下班。在他潔白的廚師服上，左胸口用托斯卡尼藍繡著Andre
+                            Chiang。能夠穿上這身榮耀，那是江振誠一路上用認真和堅持鋪出的道路。</p></span>
+                </div>
+                <div class="bottombox_right">
+                    <div class="bottomImg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="block2">
+            <div class="boxImage_1">
+                <div class="imgText_1">「當你認為自己在吃苦，代表你已經沒有熱情。」</div>
+                <div class="maskText"></div>
+            </div>
+
+            <div class="boxImage_2">
+                <div class="imgText_2">「學習隨時發生，沒有祕訣，就是花時間。」</div>
+                <div class="maskText"></div>
+            </div>
+            <div class="boxImage_3">
+                <div class="imgText_3">「達到高峰的時候，就是從零開始的時候。」</div>
+                <div class="maskText"></div>
+            </div>
+        </div>
+        <div id="block3">
+            <div class="block3Top">
+                <div class="block3Text">餐廳介紹</div>
+                <div class="mask3"></div>
+            </div>
+            <div class="block3_mid">
+                <div class="box1">
+                    <div class="mask">
+                        <div class="text">
+                            <span>Reataurant André</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottomText_res">
+                    <span>江振誠以八角哲學，Pure（純粹）、Salt（鹽）、Artisan（工藝）、South（南法）、Texture（質）、Unique（獨特）、Memory（憶）以及Terroir（風土），
+
+                        這八個元素為基礎創作了Reataurant André的料理。
+                        Restaurant ANDRE於2018年結束營業並歸還米其林二星。
+                    </span>
+                </div>
+                <div class="box2">
+                    <div class="mask">
+                        <div class="text">
+                            <span>RAW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottomText_raw">
+
+                    <span>RAW不僅是江振誠個人事業版圖的里程碑，更在裡頭注入了對台灣的期待和信心。
+                        「我從來不做同樣的事情，每家餐廳的concept都不同，都有自己的DNA，RAW的DNA就是『Craft and Nature（技藝與自然）』。」
+                        這看似相背且矛盾的兩個概念，其實是相輔相成的。</span>
+                </div>
+
+
+                <div class="box3">
+                    <div class="mask">
+                        <div class="text">
+                            <span>The Bridge</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottomText_bridge">
+                    <span>江振誠帶領一群年輕的四川團隊，在THE
+                        BRIDGE廊橋尋味四川本土食材，回溯過去川菜脈絡，遵從四季時令變化，結合現代烹飪與古法料理技法，重塑川菜的文化精髓，推出了“從四川本地向世界發聲”川菜國際化的全新概念—“歲時料理”。</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="block4">
+            <div class="block4_body">
+                <div class="card"></div>
+                <div class="cardText">
+                    <h1>現在的André</h1>
+                    一場長達3個半小時，26道菜的饗宴，這不是法式料理，而是名廚江振誠最新掌舵的四川料理「川江月」。「我們所做的不是evolution（進化），而是revolution（革命）」。<p>
+                        繼成都「廊橋」之後，江振誠再度跨界中菜，與永利皇宮一同打造屬於川菜的Fine
+                        Dining，概念不再是地道家常菜，而是「一間能對外發聲的中餐廳。」澎湃的頂級用料就不用說了，放在菜色裡卻收得極雅，在川菜的基礎架構上，嫁接港澳風味。</p>
+                    <p>「我認為川菜並沒有老派、新派，而是主內、主外，中菜很美，就像一本好書，它需要的是一個翻譯者，翻譯成不同的語言，讓全世界的人都讀懂。」江振誠用高規格的川江月做為發信站，大聲告訴世界，關於川菜百菜百味的故事。
+                    </p>
+                </div>
+            </div>
+            <div class="block4_foot">本網頁僅供教學及練習使用，若有冒犯請洽0912-345678</div>
+            <a href="#topBar">
+                <div class="GoToTop">BACK</div>
+            </a>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

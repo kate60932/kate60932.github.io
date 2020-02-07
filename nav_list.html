@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+        height: 100px;
+        background-color: cornflowerblue;
+        padding: 20px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    ul li {
+        list-style: none;
+        text-align: center;
+    }
+
+    .nav-btn-group ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-btn-group ul li {
+        width: 100px;
+        font-size: 24pt;
+        background-color: cornsilk;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    @media (max-width:768px) {
+
+
+
+        .pc {
+            display: none;
+        }
+
+        .mobile {
+            display: block;
+        }
+
+        .nav {
+            padding: 0;
+        }
+
+        .ham {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            position: relative;
+        }
+
+        .ham ul {
+            position: absolute;
+            top: 100px;
+            left: -1000px;
+            background: cornsilk;
+            width: 100vw;
+            transition: 1s;
+        }
+
+        .ham ul li {
+            padding: 10px 0;
+        }
+
+        .ham ul li:hover {
+            background-color: cornflowerblue;
+        }
+
+        .ham:hover ul {
+            left: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="nav pc ">
+        <div class="nav-btn-group">
+            <ul>
+                <a href="">
+                    <li>A</li>
+                </a>
+                <a href="">
+                    <li>B</li>
+                </a>
+                <a href="">
+                    <li>C</li>
+                </a>
+            </ul>
+        </div>
+
+    </div>
+    <div class="nav mobile">
+        <div class="ham ">
+            <ul>
+                <a href="">
+                    <li>A</li>
+                </a>
+                <a href="">
+                    <li>B</li>
+                </a>
+                <a href="">
+                    <li>C</li>
+                </a>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

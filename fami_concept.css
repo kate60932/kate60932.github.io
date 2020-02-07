@@ -1,0 +1,292 @@
+#fami_concept{
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.concept_top{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.concept_title{
+    margin-top: 0;
+    padding-top: 100px;
+    color: #38363B;
+    font-size: 32pt
+}
+
+.concept_subtitle{
+    letter-spacing: 1px;
+    font-size: 16pt;
+    font-weight: 400;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    margin-left: 0;
+    color: black;
+}
+
+.concept_bottom{
+    width: 100%;
+    height: 690px;
+    background-image: url(fami_concept_backimg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.concept_bottom_inner{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.concept_bottom_01{
+width: 45%;
+height: 45%;
+position: relative;
+float: left;
+padding-left: 10%;
+
+}
+
+.concept_bottom_02{
+    width: 45%;
+height: 45%;
+float: right;
+position: relative;
+
+}
+
+.concept_bottom_03{
+    width: 45%;
+height: 45%;
+position: relative;
+float: left;
+padding-left: 10%;
+
+}
+
+.concept_bottom_04{
+    width: 45%;
+height: 45%;
+position: relative;
+float: right;
+
+}
+
+.insist_num_even{
+    font-size: 46pt;
+    margin: 0;
+    font-weight: 100;
+    float: left;
+    position: absolute;
+    left: 12%;
+}
+
+.insist_title_even{
+    font-size: 24pt;
+    font-weight: 800;
+    margin: 0;
+    color: #000000;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+}
+
+.insist_underline_even{
+    clear: both;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.insist_content_even{
+    margin: 0;
+    width: 400px;
+    line-height:22pt;
+    font-weight: 900;
+    clear: both;
+    color: #665440;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-size: 13pt;
+    
+}
+
+.insist_num_odd{
+    font-size: 46pt;
+    margin: 0;
+    font-weight: 100;
+    float: left;
+    position: absolute;
+    left: 16%;
+}
+
+.insist_num_3{
+    font-size: 46pt;
+    margin: 0;
+    font-weight: 100;
+    float: left;
+    position: absolute;
+    left: 15%;
+}
+
+.insist_title_odd{
+    font-size: 24pt;
+    font-weight: 800;
+    margin: 0;
+    color: #000000;
+    position: absolute;
+    top: 8%;
+    left: 22%;
+}
+
+.insist_underline_odd{
+    clear: both;
+    position: absolute;
+    top: 10%;
+    left: 22%;
+}
+
+.insist_content_odd{
+    margin: 0;
+    width: 400px;
+    line-height:22pt;
+    font-weight: 900;
+    clear: both;
+    color: #665440;
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    font-size: 13pt;
+}
+
+@media (max-width: 576px) {
+    .concept_title{
+        padding-top: 85px;
+        font-size: 20pt
+    }
+
+    .concept_subtitle{
+        font-size: 10pt;
+        
+    }
+
+    .concept_bottom_01{
+        width: 100%;
+        height: 200px;
+        padding-left: 0px;
+        position: relative;
+        background-color: rgb(255, 255, 255, 0.8);
+        }
+
+    .concept_bottom_02{
+        width: 100%;
+        height: 200px;
+        padding-left: 0px;
+        background-color: rgb(255, 255, 255, 0.8);
+        }
+
+    .concept_bottom_03{
+        width: 100%;
+        height:  200px;
+        padding-left: 0px;
+        background-color: rgb(255, 255, 255, 0.8);
+        }
+        .concept_bottom_04{
+        width: 100%;
+        height:  200px;
+        padding-left: 0px;
+        background-color: rgb(255, 255, 255, 0.8);
+        }
+
+        .insist_num_even{
+            font-size: 36pt;
+            margin: 0;
+            font-weight: 100;
+            float: none;
+            position: absolute;
+            left: 0px;
+        }
+
+        .insist_num_odd{
+            font-size: 36pt;
+            margin: 0;
+            font-weight: 100;
+            float: none;
+            position: absolute;
+            left: 0px;
+        }
+        
+        .insist_title_even{
+            font-size: 16pt;
+            font-weight: 800;
+            margin: 0;
+            color: #000000;
+            position: absolute;
+            top: 8%;
+            left: 18%;
+        }
+        .insist_title_odd{
+            font-size: 16pt;
+            font-weight: 800;
+            margin: 0;
+            color: #000000;
+            position: absolute;
+            top: 8%;
+            left: 18%;
+        }
+
+        .insist_num_3{
+            font-size: 36pt;
+            margin: 0;
+            font-weight: 100;
+            float: left;
+            position: absolute;
+            left: 0px;
+        }
+
+        .insist_underline_odd{
+            clear: both;
+            position: absolute;
+            top: 10%;
+            left: 15%;
+        }
+
+        .insist_underline_even{
+            clear: both;
+            position: absolute;
+            top: 10%;
+            left: 15%;
+        }
+
+        .insist_content_odd{
+            margin-top: 20px;
+            width: 100%;
+            line-height:16pt;
+            font-weight: 900;
+            clear: both;
+            color: #665440;
+            position: absolute;
+            top: 25%;
+            left: 0%;
+            font-size: 10pt;
+        }
+
+        .insist_content_even{
+            margin-top: 20px;
+            width: 100%;
+            line-height:16pt;
+            font-weight: 900;
+            clear: both;
+            color: #665440;
+            position: absolute;
+            top: 25%;
+            left: 0%;
+            font-size: 10pt;
+        }
+
+}

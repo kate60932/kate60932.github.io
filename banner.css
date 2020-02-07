@@ -1,0 +1,125 @@
+#banner{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    background-image: url(bannerpic.jpg);
+    overflow: hidden;
+    
+}
+.banner_mask{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0,0, 0.45);
+    
+}
+
+.big_title{
+    color: #DBDBDB;
+    font-size: 36pt;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 250px;
+    padding-top: 220px;
+}
+
+.small_title{
+    color: #DBDBDB;
+    font-size: 36pt;
+    margin-top: 0px;
+    margin-left: 250px;
+    
+}
+
+h2{
+    color: #DBDBDB;
+    font-size: 20pt;
+    margin-left: 250px;
+    
+}
+
+.banner_buttom{
+    width: 155px;
+    height: 50px;
+    background-color: #DC8002;
+    margin-top: 80px;
+    margin-left: 250px;
+    border-radius: 10px;
+    line-height: 50px;
+	font-size: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.banner_buttom a{
+    text-decoration: none;
+    color: rgb(250, 248, 248);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+
+    #banner{
+        width: 100%;
+        height: 667px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        padding-top: 70px;
+        background-image: url(bannerpic_mobile.JPG);
+        
+        
+    }
+
+    .banner_mask{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0,0, 0.45);
+        
+    }
+
+    .big_title{
+        color: #DBDBDB;
+        font-size: 24pt;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        margin-left: 40px;
+        padding-top: 250px;
+    }
+    .small_title{
+        color: #DBDBDB;
+        font-size: 16pt;
+        margin-top: 0px;
+        margin-left: 40px;
+        
+    }
+    
+    h2{
+        color: #DBDBDB;
+        font-size: 12pt;
+        margin-left: 40px;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+    }
+    
+    .banner_buttom{
+        width: 93px;
+        height: 30px;
+        background-color: #DC8002;
+        margin-top: 0px;
+        margin-left: 40px;
+        border-radius: 10px;
+        line-height: 30px;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+    }
+   
+}
